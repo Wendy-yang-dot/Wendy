@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SACC 科技创新大赛报名</title>
+    <meta
+      name="description"
+      content="SACC 学生科协科技创新大赛报名网站，提供赛事信息与在线报名表单。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar container">
+        <div class="brand-wrap">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-name">SACC</div>
+            <div class="brand-sub">Student Association of Computer &amp; Communication</div>
+          </div>
+        </div>
+
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="切换深色模式">
+          <span class="toggle-icon">🌙</span>
+          <span class="toggle-text">深色模式</span>
+        </button>
+      </header>
+
+      <main class="container main-layout">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">2026 下学期 · 校园科技盛会</p>
+            <h1>2026 SACC 科技创新大赛</h1>
+            <p class="hero-description">
+              以“科技创新，赋能未来”为主题，聚焦创新设计、算法攻关与创业实践，
+              让每一位热爱技术的同学都有机会展示创意、碰撞灵感与成就梦想。
+            </p>
+
+            <div class="hero-actions">
+              <a href="#register" class="primary-btn">立即报名</a>
+              <a href="#about" class="secondary-btn">赛事详情</a>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="event-badge">报名中</div>
+            <ul class="event-highlights">
+              <li><span>比赛时间</span><strong>2026.10.18 - 10.19</strong></li>
+              <li><span>比赛地点</span><strong>南京邮电大学仙林校区计算机学科楼</strong></li>
+              <li><span>报名截止</span><strong>2026.10.10 23:59</strong></li>
+              <li><span>参赛对象</span><strong>全校在校生</strong></li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="about" class="info-grid">
+          <article class="info-card accent">
+            <div class="card-tag">比赛名称</div>
+            <h3>2026 SACC 科技创新大赛</h3>
+          </article>
+          <article class="info-card">
+            <div class="card-tag">时间</div>
+            <h3>10 月 18 日 - 10 月 19 日</h3>
+          </article>
+          <article class="info-card">
+            <div class="card-tag">地点</div>
+            <h3>南京邮电大学仙林校区计算机学科楼</h3>
+          </article>
+          <article class="info-card">
+            <div class="card-tag">报名截止</div>
+            <h3>10 月 10 日 23:59</h3>
+          </article>
+        </section>
+
+        <section class="intro-panel">
+          <div class="panel-header">
+            <span class="mini-label">赛事简介</span>
+            <h2>用创意与技术，定义校园创新的未来</h2>
+          </div>
+          <p>
+            本次大赛面向全校学生开放，鼓励围绕人工智能、创新设计、软件开发、创业实践等
+            领域开展项目研究与落地实践，打造一个开放、包容、充满探索精神的校园竞技舞台。
+          </p>
+          <p>
+            赛事采用“项目申报 + 公开答辩 + 评审打分”的形式，帮助同学在项目构思、技术实现与表达展示之间
+            形成完整成长闭环。欢迎每一位敢于尝试与表达的你加入这场创新盛会。
+          </p>
+        </section>
+
+        <section id="register" class="register-wrap">
+          <div class="register-header">
+            <div>
+              <p class="mini-label">报名通道</p>
+              <h2>在线报名表</h2>
+            </div>
+            <span class="submit-status">报名信息仅用于赛事安排与通知</span>
+          </div>
+
+          <form id="registerForm" novalidate>
+            <div class="field-grid">
+              <div class="field">
+                <label for="name">姓名</label>
+                <input id="name" name="name" type="text" placeholder="请输入真实姓名" />
+                <small class="error-text"></small>
+              </div>
+
+              <div class="field">
+                <label for="studentId">学号</label>
+                <input id="studentId" name="studentId" type="text" placeholder="例如：202310123456" />
+                <small class="error-text"></small>
+              </div>
+
+              <div class="field">
+                <label for="college">学院 / 专业</label>
+                <input id="college" name="college" type="text" placeholder="例如：计算机学院 / 计算机科学与技术" />
+                <small class="error-text"></small>
+              </div>
+
+              <div class="field">
+                <label for="phone">手机号</label>
+                <input id="phone" name="phone" type="tel" inputmode="numeric" placeholder="请输入11位手机号" />
+                <small class="error-text"></small>
+              </div>
+
+              <div class="field">
+                <label for="email">邮箱</label>
+                <input id="email" name="email" type="email" placeholder="请输入邮箱" />
+                <small class="error-text"></small>
+              </div>
+
+              <div class="field">
+                <label for="category">参赛类别</label>
+                <select id="category" name="category">
+                  <option value="">请选择类别</option>
+                  <option value="创新设计类">创新设计类</option>
+                  <option value="算法竞赛类">算法竞赛类</option>
+                  <option value="创业实践类">创业实践类</option>
+                  <option value="人工智能应用类">人工智能应用类</option>
+                </select>
+                <small class="error-text"></small>
+              </div>
+            </div>
+
+            <div class="field radio-group">
+              <label>是否服从调剂</label>
+              <div class="radio-options">
+                <label class="radio-item">
+                  <input type="radio" name="adjustment" value="是" />
+                  <span>是</span>
+                </label>
+                <label class="radio-item">
+                  <input type="radio" name="adjustment" value="否" />
+                  <span>否</span>
+                </label>
+              </div>
+              <small class="error-text"></small>
+            </div>
+
+            <div class="field">
+              <label for="intro">个人简介 / 参赛宣言</label>
+              <textarea id="intro" name="intro" rows="5" placeholder="介绍你的项目背景、优势与参赛目标（不少于 20 字）"></textarea>
+              <small class="error-text"></small>
+            </div>
+
+            <div class="form-actions">
+              <button type="reset" class="secondary-btn form-btn">重置</button>
+              <button type="submit" class="primary-btn form-btn">提交报名</button>
+            </div>
+          </form>
+        </section>
+
+        <section id="certificate" class="certificate hidden" aria-live="polite">
+          <div class="certificate-header">
+            <span>报名凭证</span>
+            <strong>已确认</strong>
+          </div>
+          <h3>2026 SACC 科技创新大赛</h3>
+          <div class="certificate-body">
+            <div>
+              <label>报名编号</label>
+              <p id="inviteCode">—</p>
+            </div>
+            <div>
+              <label>参赛者</label>
+              <p id="certificateName">—</p>
+            </div>
+            <div>
+              <label>参赛类别</label>
+              <p id="certificateCategory">—</p>
+            </div>
+            <div>
+              <label>报名时间</label>
+              <p id="certificateTime">—</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="successModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-card">
+        <div class="modal-icon">✓</div>
+        <h3 id="modalTitle">报名成功</h3>
+        <p>你的信息已成功提交，赛事组委会将及时通知你后续安排。</p>
+        <button type="button" class="primary-btn modal-btn" id="closeModal">确定</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
